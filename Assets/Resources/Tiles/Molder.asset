@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa618bbecbaeab2479e8dd88bd4babc2, type: 3}
+  m_Name: Molder
+  m_EditorClassIdentifier: 
+  tileName: Molder
+  isBuilding: 1
+  peopleCapacity: 0
+  action:
+    actionName: Mold Dough
+    primaryCost:
+      item: {fileID: 11400000, guid: bae6b4be68f2f304ab3fb9695a53de08, type: 2}
+      amount: 4
+    secondaryCost:
+      item: {fileID: 11400000, guid: a5485c0468d568d419e9d4bdf12daa4c, type: 2}
+      amount: 2
+    reward:
+      item: {fileID: 11400000, guid: e007d63927a3c9148820602572017f49, type: 2}
+      amount: 1
+  color: {r: 0.9056604, g: 0.6226924, b: 0.4485582, a: 1}

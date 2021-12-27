@@ -1,0 +1,204 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e1f3f0f9eb4399448c45a7d66fb3cc3, type: 3}
+  m_Name: MainConfig
+  m_EditorClassIdentifier: 
+  currentMissionName: Breadtastic!
+  buildings:
+  - tileName: Clayer
+    daysToConstruct: 0
+    cost:
+      itemName: Wood
+      amount: 8
+  - tileName: House
+    daysToConstruct: 0
+    cost:
+      itemName: Wood
+      amount: 12
+  - tileName: Molder
+    daysToConstruct: 0
+    cost:
+      itemName: Wood
+      amount: 12
+  - tileName: Oven
+    daysToConstruct: 0
+    cost:
+      itemName: Clay
+      amount: 8
+  - tileName: Windmill
+    daysToConstruct: 0
+    cost:
+      itemName: Wood
+      amount: 16
+  events: []
+  items:
+  - itemName: Bread
+  - itemName: Clay
+  - itemName: Dough
+  - itemName: Flour
+  - itemName: Water
+  - itemName: Wheat
+  - itemName: Wood
+  missions:
+  - missionName: Breadtastic!
+    goal:
+      itemName: Bread
+      amount: 4
+    maxDaysToComplete: 30
+    startingTilesNames:
+    - Fields
+    - Forest
+    - River
+    alreadyPlacedBuildingsNames:
+    - House
+    allowedBuildingsNames:
+    - Clayer
+    - House
+    - Molder
+    - Oven
+    - Windmill
+  tiles:
+  - tileName: Clayer
+    isBuilding: 1
+    peopleCapacity: 0
+    action:
+      actionName: Dig Clay
+      primaryCost:
+        itemName: 
+        amount: 0
+      secondaryCost:
+        itemName: 
+        amount: 0
+      reward:
+        itemName: Clay
+        amount: 2
+    color: {r: 0.58450514, g: 0.64421946, b: 0.6698113, a: 1}
+  - tileName: Empty
+    isBuilding: 0
+    peopleCapacity: 0
+    action:
+      actionName: 
+      primaryCost:
+        itemName: 
+        amount: 0
+      secondaryCost:
+        itemName: 
+        amount: 0
+      reward:
+        itemName: 
+        amount: 0
+    color: {r: 0.6604664, g: 0.7735849, b: 0.6666405, a: 1}
+  - tileName: Fields
+    isBuilding: 0
+    peopleCapacity: 0
+    action:
+      actionName: Harvest Wheat
+      primaryCost:
+        itemName: 
+        amount: 0
+      secondaryCost:
+        itemName: 
+        amount: 0
+      reward:
+        itemName: Wheat
+        amount: 2
+    color: {r: 0.8773585, g: 0.7738964, b: 0.46764863, a: 1}
+  - tileName: Forest
+    isBuilding: 0
+    peopleCapacity: 0
+    action:
+      actionName: Chop Trees
+      primaryCost:
+        itemName: 
+        amount: 0
+      secondaryCost:
+        itemName: 
+        amount: 0
+      reward:
+        itemName: Wood
+        amount: 4
+    color: {r: 0.43615624, g: 0.5283019, b: 0.3962264, a: 1}
+  - tileName: House
+    isBuilding: 1
+    peopleCapacity: 1
+    action:
+      actionName: Holds 1 Person
+      primaryCost:
+        itemName: 
+        amount: 0
+      secondaryCost:
+        itemName: 
+        amount: 0
+      reward:
+        itemName: 
+        amount: 0
+    color: {r: 0.5188679, g: 0.37481183, b: 0.28635636, a: 1}
+  - tileName: Molder
+    isBuilding: 1
+    peopleCapacity: 0
+    action:
+      actionName: Mold Dough
+      primaryCost:
+        itemName: Flour
+        amount: 4
+      secondaryCost:
+        itemName: Water
+        amount: 2
+      reward:
+        itemName: Dough
+        amount: 1
+    color: {r: 0.9056604, g: 0.6226924, b: 0.4485582, a: 1}
+  - tileName: Oven
+    isBuilding: 1
+    peopleCapacity: 0
+    action:
+      actionName: Bake Bread
+      primaryCost:
+        itemName: Dough
+        amount: 2
+      secondaryCost:
+        itemName: 
+        amount: 0
+      reward:
+        itemName: Bread
+        amount: 1
+    color: {r: 0.5377358, g: 0.38808292, b: 0.39639702, a: 1}
+  - tileName: River
+    isBuilding: 0
+    peopleCapacity: 0
+    action:
+      actionName: Extract Water
+      primaryCost:
+        itemName: 
+        amount: 0
+      secondaryCost:
+        itemName: 
+        amount: 0
+      reward:
+        itemName: Water
+        amount: 2
+    color: {r: 0.4321378, g: 0.68002015, b: 0.7830189, a: 1}
+  - tileName: Windmill
+    isBuilding: 1
+    peopleCapacity: 0
+    action:
+      actionName: Mill Wheat
+      primaryCost:
+        itemName: Wheat
+        amount: 1
+      secondaryCost:
+        itemName: 
+        amount: 0
+      reward:
+        itemName: Flour
+        amount: 1
+    color: {r: 0.6603774, g: 0.5894515, b: 0.54512286, a: 1}

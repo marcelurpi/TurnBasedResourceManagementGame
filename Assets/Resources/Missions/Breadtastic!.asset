@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 359937e727dcd0b468332a010530e434, type: 3}
+  m_Name: Breadtastic!
+  m_EditorClassIdentifier: 
+  missionName: Breadtastic!
+  goal:
+    item: {fileID: 11400000, guid: 9fc996632c96bf04b861ab4f46045904, type: 2}
+    amount: 4
+  maxDaysToComplete: 30
+  startingTiles:
+  - {fileID: 11400000, guid: 9ef0a88065accc749b9d885b3b56afbd, type: 2}
+  - {fileID: 11400000, guid: 5834bd430d62cb34697460bb8d6037ab, type: 2}
+  - {fileID: 11400000, guid: 66ab77f6a24226542a300f71f2aa1701, type: 2}
+  alreadyPlacedBuildings:
+  - {fileID: 11400000, guid: 15377396e68dcca459d51653fedd2b07, type: 2}
+  allowedBuildings:
+  - {fileID: 11400000, guid: 39b39d93d04c68148b16cb4775a5f7a5, type: 2}
+  - {fileID: 11400000, guid: 15377396e68dcca459d51653fedd2b07, type: 2}
+  - {fileID: 11400000, guid: 20d445b305345fa4599eb8706b3653ae, type: 2}
+  - {fileID: 11400000, guid: 96172db792be1b347bd760cdd07d89e5, type: 2}
+  - {fileID: 11400000, guid: f5d28cbe97658f4489daa9bbbb4b9391, type: 2}
+  allowedEvents:
+  - {fileID: 11400000, guid: 3a9200300b99cbb4483ff435b8c3cb27, type: 2}

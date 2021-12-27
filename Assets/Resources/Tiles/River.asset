@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa618bbecbaeab2479e8dd88bd4babc2, type: 3}
+  m_Name: River
+  m_EditorClassIdentifier: 
+  tileName: River
+  isBuilding: 0
+  peopleCapacity: 0
+  action:
+    actionName: Extract Water
+    primaryCost:
+      item: {fileID: 0}
+      amount: 0
+    secondaryCost:
+      item: {fileID: 0}
+      amount: 0
+    reward:
+      item: {fileID: 11400000, guid: a5485c0468d568d419e9d4bdf12daa4c, type: 2}
+      amount: 2
+  color: {r: 0.4321378, g: 0.68002015, b: 0.7830189, a: 1}
